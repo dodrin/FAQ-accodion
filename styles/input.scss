@@ -1,0 +1,98 @@
+@use 'base';
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: base.$font;
+}
+
+body {
+  background: base.$pink url("./assets/images/background-pattern-mobile.svg") no-repeat fixed top;
+  background-size: contain;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: base.$white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 30px -20px base.$purple;
+  max-width: 36rem;
+
+  header {
+    display: flex;
+    margin: 0 1rem;
+
+    h1 {
+      color: base.$dark_purple;
+      margin: 1rem;
+    }
+
+    img {
+      width: 1.5rem;
+    }
+  }
+
+  section {
+    h3 {
+      color: base.$dark_purple;
+      &:hover {
+        color: #AD28EB;
+      }
+    }
+
+    .accordion {
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    p {
+      color: base.$purple;
+      line-height: 1.6;
+    }
+
+    .panel {
+      padding: 0 1rem;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: base.$pink url("./assets/images/background-pattern-desktop.svg") no-repeat fixed top;
+  }
+}

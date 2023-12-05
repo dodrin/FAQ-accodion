@@ -1,0 +1,88 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background: hsl(275, 100%, 97%) url("./assets/images/background-pattern-mobile.svg") no-repeat fixed top;
+  background-size: contain;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 30px -20px hsl(292, 16%, 49%);
+  max-width: 36rem;
+}
+.container header {
+  display: flex;
+  margin: 0 1rem;
+}
+.container header h1 {
+  color: hsl(292, 42%, 14%);
+  margin: 1rem;
+}
+.container header img {
+  width: 1.5rem;
+}
+.container section h3 {
+  color: hsl(292, 42%, 14%);
+}
+.container section h3:hover {
+  color: #AD28EB;
+}
+.container section .accordion {
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container section p {
+  color: hsl(292, 16%, 49%);
+  line-height: 1.6;
+}
+.container section .panel {
+  padding: 0 1rem;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 5px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  body {
+    background: hsl(275, 100%, 97%) url("./assets/images/background-pattern-desktop.svg") no-repeat fixed top;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
