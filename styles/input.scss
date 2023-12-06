@@ -13,7 +13,7 @@
 
 body {
   background: base.$pink url("./assets/images/background-pattern-mobile.svg") no-repeat fixed top;
-  background-size: contain;
+  background-size: 100% auto;
   margin: 0;
   height: 100vh;
   display: flex;
@@ -45,9 +45,11 @@ body {
     }
   }
 
-  section {
+  main {
     h2 {
       color: base.$dark_purple;
+      transition: 0.5s;
+
       &:hover {
         color: #AD28EB;
       }
@@ -60,7 +62,7 @@ body {
       text-align: left;
       border: none;
       outline: none;
-      transition: 0.4s;
+      transition: 0.5s;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -94,5 +96,6 @@ body {
 @media (min-width: 768px) {
   body {
     background: base.$pink url("./assets/images/background-pattern-desktop.svg") no-repeat fixed top;
+    background-size: 100% auto;
   }
 }
